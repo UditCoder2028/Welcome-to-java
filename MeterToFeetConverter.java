@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class MeterToFeetConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter length in meters: ");
+        double meters = scanner.nextDouble();
+        
+        double feet = meters * 3.28084;  // Conversion factor
+        
+        System.out.println(meters + " meters is equal to " + feet + " feet.");
+        
+        scanner.close();
+    }
+}
